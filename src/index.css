@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Reset + base tweaks */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Base color tokens (Tailwind handles theme) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Light mode (default) */
+body {
+  @apply bg-white text-slate-900 transition-colors duration-500;
+}
+
+/* Dark mode */
+.dark body {
+  @apply bg-[#0b1120] text-slate-100 transition-colors duration-500;
+}
+
+/* Links */
+a {
+  @apply font-medium text-indigo-600 hover:text-indigo-500;
+}
+
+/* Buttons reset */
+button {
+  @apply rounded-lg border border-transparent px-4 py-2 font-medium transition;
+}
+button:hover {
+  @apply border-indigo-400;
+}

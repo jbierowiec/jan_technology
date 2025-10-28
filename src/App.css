@@ -1,0 +1,21 @@
+/* App.css */
+
+/* Centering utility (optional if Tailwind classes already do this) */
+#root {
+  @apply max-w-7xl mx-auto p-6;
+}
+
+/* Optional: fade animation for theme change */
+html {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Placeholder for any logo effects you still want */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 0.3s;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #6366f1aa);
+}

@@ -4,7 +4,7 @@ import Button from "../ui/Button.jsx";
 import { Linkedin, Send, Clock, CheckCircle2, Sparkles } from "lucide-react";
 
 // === Add your Apps Script Web App URL in .env as VITE_SHEETS_ENDPOINT ===
-const SHEETS_ENDPOINT = import.meta.env.VITE_SHEETS_ENDPOINT;
+const SHEETS_ENDPOINT = "https://script.google.com/macros/s/AKfycbzMvVXPxmCqYSl0G3C8e6DZFO77cvwgcmnElfwMFqUOFtllMg3E1gxkSO1jaaXQCpSm2Q/exec"
 
 // fire-and-forget save to Google Sheets (Apps Script)
 async function saveToSheet({ name, email, message }) {
@@ -139,12 +139,12 @@ export default function Contact() {
             {/* Auto-disappearing alert */}
             {status.ok === true && (
               <p className="text-sm text-emerald-500">
-                Message saved — I’ll get back to you soon!
+                Message sent! - I'll get back to you soon!
               </p>
             )}
             {status.ok === false && (
               <p className="text-sm text-rose-500">
-                Something went wrong saving your message. Please try again.
+                Something went wrong sending your message. Please try again.
               </p>
             )}
           </div>

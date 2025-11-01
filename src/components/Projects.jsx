@@ -11,7 +11,7 @@ const PROJECTS = [
     tags: ["HTML5", "CSS3", "p5.js", "pyscript"],
     category: ["Web Development"],
     links: { live: "https://www.physim.org" },
-    thumb: "/thumbs/Physim.png",
+    thumb: "/public/thumbs/Physim.png",
   },
   {
     id: "sudoku-game",
@@ -19,7 +19,7 @@ const PROJECTS = [
     tags: ["HTML5", "CSS3", "JavaScript", "SQL"],
     category: ["Web Development", "Game Development"], 
     links: { live: "https://sudokubros.up.railway.app" },
-    thumb: "/thumbs/SudokuGame.png",
+    thumb: "/public/thumbs/SudokuGame.png",
   },
   {
     id: "pocketbookapps",
@@ -27,7 +27,7 @@ const PROJECTS = [
     tags: ["React", "Bootstrap"],
     category: ["Web Development"],
     links: { live: "https://www.pocketbookapps.com" },
-    thumb: "/thumbs/PocketBookApps.png",
+    thumb: "/public/thumbs/PocketBookApps.png",
   },
   {
     id: "mycyberlab",
@@ -35,7 +35,7 @@ const PROJECTS = [
     tags: ["Flask", "Bootstrap", "SQL"],
     category: ["Web Development"],
     links: { live: "https://mycyberlab.up.railway.app" },
-    thumb: "/thumbs/MyCyberLab.png",
+    thumb: "/public/thumbs/MyCyberLab.png",
   },
   {
     id: "evryquiktool",
@@ -43,7 +43,7 @@ const PROJECTS = [
     tags: ["HTML5", "Flask", "Bootstrap"],
     category: ["Web Development"],
     links: { live: "https://evryquiktool.up.railway.app" },
-    thumb: "/thumbs/evryquiktool.png",
+    thumb: "/public/thumbs/evryquiktool.png",
   },
   {
     id: "thepdfwebsite",
@@ -51,7 +51,7 @@ const PROJECTS = [
     tags: ["HTML5", "CSS3"],
     category: ["Web Development"],
     links: { live: "https://thepdfwebsite.com" },
-    thumb: "/thumbs/ThePDFWebsite.png",
+    thumb: "/public/thumbs/ThePDFWebsite.png",
   },
   {
     id: "micro-saas-landing-page",
@@ -59,7 +59,7 @@ const PROJECTS = [
     tags: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
     category: ["Web Design"],
     links: { live: "https://jbierowiec.github.io/micro_saas_landing_page/" },
-    thumb: "/thumbs/micro_saas_landing_page.png",
+    thumb: "/public/thumbs/micro_saas_landing_page.png",
   },
   {
     id: "technology-landing-page",
@@ -67,7 +67,7 @@ const PROJECTS = [
     tags: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
     category: ["Web Design"],
     links: { live: "https://jbierowiec.github.io/technology_landing_page/" },
-    thumb: "/thumbs/technology_landing_page.png",
+    thumb: "/public/thumbs/technology_landing_page.png",
   },
   {
     id: "construction-landing-page",
@@ -75,7 +75,7 @@ const PROJECTS = [
     tags: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
     category: ["Web Design"],
     links: { live: "https://jbierowiec.github.io/construction_landing_page/" },
-    thumb: "/thumbs/construction_landing_page.png",
+    thumb: "/public/thumbs/construction_landing_page.png",
   },
   {
     id: "mathematical-proofs",
@@ -85,7 +85,7 @@ const PROJECTS = [
     links: {
       live: "https://apps.apple.com/us/app/mathematical-proofs/id6463801334",
     },
-    thumb: "/thumbs/math_proofs.png",
+    thumb: "/public/thumbs/math_proofs.png",
   },
   {
     id: "biology-definitions",
@@ -95,7 +95,7 @@ const PROJECTS = [
     links: {
       live: "https://apps.apple.com/us/app/biology-definitions/id6740299638",
     },
-    thumb: "/thumbs/biology_definitions.png",
+    thumb: "/public/thumbs/biology_definitions.png",
   },
   {
     id: "polonia-internationalis",
@@ -105,7 +105,7 @@ const PROJECTS = [
     links: {
       live: "https://apps.apple.com/us/app/polonia-internationalis/id6478061951",
     },
-    thumb: "/thumbs/polonia_internationalis.png",
+    thumb: "/public/thumbs/polonia_internationalis.png",
   },
   {
     id: "e&m-simulation",
@@ -115,7 +115,7 @@ const PROJECTS = [
     links: {
       live: "https://jbierowiec.github.io/assets/html/EMFieldVisualizer.html",
     },
-    thumb: "/thumbs/E&M_Simulation.png",
+    thumb: "/public/thumbs/E&M_Simulation.png",
   },
 ];
 

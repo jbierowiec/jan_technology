@@ -1,19 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Section from "../ui/Section.jsx";
 import Button from "../ui/Button.jsx";
-import {
-  Mail,
-  Linkedin,
-  Send,
-  Clock,
-  CheckCircle2,
-  Sparkles,
-} from "lucide-react";
+import { Linkedin, Send, Clock, CheckCircle2, Sparkles } from "lucide-react";
 
-function sendMailto({ name, email, message }) {
-  const subject = encodeURIComponent(`Inquiry from ${name || "a visitor"}`);
-  const body = encodeURIComponent(`${message}\n\nFrom: ${name} <${email}>`);
-  window.location.href = `mailto:jan@example.com?subject=${subject}&body=${body}`;
+// === Add your Apps Script Web App URL in .env as VITE_SHEETS_ENDPOINT ===
+const SHEETS_ENDPOINT = import.meta.env.VITE_SHEETS_ENDPOINT;
+
+// fire-and-forget save to Google Sheets (Apps Script)
+async function saveToSheet({ name, email, message }) {
+  try {
+    const res = await fetch(SHEETS_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" }, // avoids strict CORS preflight
+      body: JSON.stringify({
+        name,
+        email,
+        message,
+        source: "contact_form",
+      }),
+    });
+    if (!res.ok) throw new Error("Network error");
+    return true;
+  } catch (err) {
+    console.error("Save failed:", err);
+    return false;
+  }
 }
 
 function Chip({ children }) {
@@ -28,6 +39,19 @@ function Chip({ children }) {
 }
 
 export default function Contact() {
+  const [status, setStatus] = useState({ loading: false, ok: null }); // ok: true | false | null
+
+  // Auto-clear success/fail message after 2 seconds
+  useEffect(() => {
+    if (status.ok !== null) {
+      const timer = setTimeout(
+        () => setStatus((s) => ({ ...s, ok: null })),
+        2000
+      );
+      return () => clearTimeout(timer);
+    }
+  }, [status.ok]);
+
   return (
     <Section id="contact">
       <div className="mb-10 text-center">
@@ -41,14 +65,20 @@ export default function Contact() {
         {/* Form card */}
         <form
           className="group relative rounded-[22px] border border-black/5 bg-white p-6 shadow-lg backdrop-blur-xl dark:border-white/10 dark:bg-[#0b1120]"
-          onSubmit={(e) => {
+          onSubmit={async (e) => {
             e.preventDefault();
             const form = e.currentTarget;
-            sendMailto({
+            const payload = {
               name: form.name.value,
               email: form.email.value,
               message: form.message.value,
-            });
+            };
+
+            setStatus({ loading: true, ok: null });
+            const ok = await saveToSheet(payload);
+            setStatus({ loading: false, ok });
+
+            if (ok) form.reset();
           }}
         >
           <div className="grid gap-4">
@@ -91,8 +121,9 @@ export default function Contact() {
             </label>
 
             <div className="flex items-center gap-3 pt-1">
-              <Button>
-                <Send className="h-4 w-4" /> Send Email
+              <Button disabled={status.loading}>
+                <Send className="h-4 w-4" />{" "}
+                {status.loading ? "Sending..." : "Send Email"}
               </Button>
               <a
                 href="https://www.linkedin.com/in/jan-bierowiec/"
@@ -104,10 +135,22 @@ export default function Contact() {
                 <Linkedin className="h-4 w-4" /> LinkedIn
               </a>
             </div>
+
+            {/* Auto-disappearing alert */}
+            {status.ok === true && (
+              <p className="text-sm text-emerald-500">
+                Message saved — I’ll get back to you soon!
+              </p>
+            )}
+            {status.ok === false && (
+              <p className="text-sm text-rose-500">
+                Something went wrong saving your message. Please try again.
+              </p>
+            )}
           </div>
         </form>
 
-        {/* Info / services card */}
+        {/* Info / services card (unchanged) */}
         <div className="group relative rounded-[22px] border border-black/5 bg-white p-6 shadow-lg backdrop-blur-xl dark:border-white/10 dark:bg-[#0b1120]">
           <h3 className="mb-4 flex items-center gap-2 text-lg font-semibold text-slate-900 dark:text-white">
             <Sparkles className="h-5 w-5 text-indigo-400" /> Hire me for
@@ -115,17 +158,19 @@ export default function Contact() {
 
           <div className="mb-6 grid gap-2 text-slate-700 dark:text-white/80">
             <div className="rounded-xl border border-black/10 bg-black/5 p-3 dark:border-white/10 dark:bg-white/5">
-              Functional websites with clean UX and strong tooling
+              Scalable SaaS platforms with robust backends and maintainable APIs
             </div>
             <div className="rounded-xl border border-black/10 bg-black/5 p-3 dark:border-white/10 dark:bg-white/5">
-              App development: React + native wrappers or PWA
+              App development — React, native wrappers, and PWAs focused on
+              performance
             </div>
             <div className="rounded-xl border border-black/10 bg-black/5 p-3 dark:border-white/10 dark:bg-white/5">
-              Functional data-driven interfaces and visualization dashboards
+              Data visualization and analytics dashboards — turning complex data
+              into insight
             </div>
             <div className="rounded-xl border border-black/10 bg-black/5 p-3 dark:border-white/10 dark:bg-white/5">
-              Analytics and interactive charts for performance, progress, or
-              spatial data
+              Functional-first design — reliable systems where usability
+              supports utility
             </div>
           </div>
 
@@ -133,11 +178,12 @@ export default function Contact() {
             Capabilities
           </h4>
           <div className="mb-6 flex flex-wrap gap-2">
-            <Chip>Three.js</Chip>
-            <Chip>p5.js</Chip>
+            <Chip>React</Chip>
+            <Chip>Flask</Chip>
             <Chip>Stripe</Chip>
             <Chip>Auth</Chip>
-            <Chip>Performant SPA</Chip>
+            <Chip>PostgreSQL</Chip>
+            <Chip>p5.js</Chip>
           </div>
 
           <div

@@ -40,11 +40,15 @@ export default function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-black/10 bg-white/90 backdrop-blur dark:border-white/10 dark:bg-slate-950/80 transition-colors duration-500">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
         {/* Left logo + name */}
-        <div className="flex items-center gap-3">
+        <a
+          href="/index.html"
+          className="flex items-center gap-3 group cursor-pointer"
+          aria-label="Go to main page"
+        >
           <div
             className="h-10 w-10 rounded-2xl bg-gradient-to-br from-indigo-500 to-indigo-700
-                       shadow-md ring-2 ring-indigo-200/70 dark:ring-white/15
-                       flex items-center justify-center"
+               shadow-md ring-2 ring-indigo-200/70 dark:ring-white/15
+               flex items-center justify-center transition-transform group-hover:scale-105"
             aria-label="Jan Bierowiec logo"
           >
             <span className="text-white/95 text-[11px] font-bold tracking-widest select-none">
@@ -54,11 +58,12 @@ export default function Navbar() {
 
           <span
             className="text-sm font-mono uppercase tracking-widest
-                       text-slate-800 dark:text-white/90"
+               text-slate-800 dark:text-white/90 group-hover:text-indigo-600 dark:group-hover:text-indigo-400
+               transition-colors"
           >
             Jan Bierowiec
           </span>
-        </div>
+        </a>
 
         {/* Center nav links */}
         <nav className="hidden md:flex items-center gap-6">

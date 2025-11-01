@@ -1,0 +1,19 @@
+# Ignore all environment variable files
+.env
+.env.*
+
+# Node and build output
+node_modules/
+dist/
+build/
+
+# System files
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs/editors
+.vscode/

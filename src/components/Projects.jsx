@@ -56,6 +56,14 @@ const PROJECTS = [
     thumb: thumb("ThePDFWebsite.png"),
   },
   {
+    id: "mathematical-notation-app",
+    title: "Mathematical Notation App - Mathematical Notation Builder & Translator",
+    tags: ["React", "CSS3"],
+    category: ["Web Development"],
+    links: { live: "https://mathematical-notation.netlify.app" },
+    thumb: thumb("mathematical_notation_app.png"),
+  },
+  {
     id: "micro-saas-landing-page",
     title: "Micro SaaS Landing Page",
     tags: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],

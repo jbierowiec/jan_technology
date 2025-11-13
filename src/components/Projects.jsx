@@ -9,7 +9,7 @@ const thumb = (name) => `${import.meta.env.BASE_URL}thumbs/${name}`;
 const PROJECTS = [
   {
     id: "physim",
-    title: "Physim - Physics Learning Platform",
+    title: "Physim",
     tags: ["HTML5", "CSS3", "p5.js", "pyscript"],
     category: ["Web Development"],
     links: { live: "https://www.physim.org" },
@@ -25,7 +25,7 @@ const PROJECTS = [
   },
   {
     id: "pocketbookapps",
-    title: "PocketBookApps - Mobile Pocket Books for Learning",
+    title: "PocketBookApps",
     tags: ["React", "Bootstrap"],
     category: ["Web Development"],
     links: { live: "https://www.pocketbookapps.com" },
@@ -33,7 +33,7 @@ const PROJECTS = [
   },
   {
     id: "mycyberlab",
-    title: "MyCyberLab - Cybersecurity Learning Platform",
+    title: "MyCyberLab",
     tags: ["Flask", "Bootstrap", "SQL"],
     category: ["Web Development"],
     links: { live: "https://mycyberlab.up.railway.app" },
@@ -41,7 +41,7 @@ const PROJECTS = [
   },
   {
     id: "evryquiktool",
-    title: "evryquiktool - Digital Utility Toolbox",
+    title: "evryquiktool",
     tags: ["HTML5", "Flask", "Bootstrap"],
     category: ["Web Development"],
     links: { live: "https://evryquiktool.up.railway.app" },
@@ -49,7 +49,7 @@ const PROJECTS = [
   },
   {
     id: "thepdfwebsite",
-    title: "ThePDFWebsite - PDF Browser Render Clone",
+    title: "ThePDFWebsite",
     tags: ["HTML5", "CSS3"],
     category: ["Web Development"],
     links: { live: "https://thepdfwebsite.com" },
@@ -57,7 +57,7 @@ const PROJECTS = [
   },
   {
     id: "mathematical-notation-app",
-    title: "Mathematical Notation App - Mathematical Notation Builder & Translator",
+    title: "Mathematical Notation App",
     tags: ["React", "CSS3"],
     category: ["Web Development"],
     links: { live: "https://mathematical-notation.netlify.app" },
@@ -65,7 +65,7 @@ const PROJECTS = [
   },
   {
     id: "micro-saas-landing-page",
-    title: "Micro SaaS Landing Page",
+    title: "Micro SaaS Firm Landing Page",
     tags: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
     category: ["Web Design"],
     links: { live: "https://jbierowiec.github.io/micro_saas_landing_page/" },
@@ -73,7 +73,7 @@ const PROJECTS = [
   },
   {
     id: "technology-landing-page",
-    title: "Technology Landing Page",
+    title: "Technology Firm Landing Page",
     tags: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
     category: ["Web Design"],
     links: { live: "https://jbierowiec.github.io/technology_landing_page/" },
@@ -81,7 +81,7 @@ const PROJECTS = [
   },
   {
     id: "construction-landing-page",
-    title: "Construction Landing Page",
+    title: "Construction Firm Landing Page",
     tags: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
     category: ["Web Design"],
     links: { live: "https://jbierowiec.github.io/construction_landing_page/" },

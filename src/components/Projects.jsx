@@ -64,6 +64,14 @@ const PROJECTS = [
     thumb: thumb("mathematical_notation_app.png"),
   },
   {
+    id: "jans-math-blog",
+    title: "Jan's Math Blog",
+    tags: ["HTML", "CSS3", "Nunjucks"],
+    category: ["Web Development"],
+    links: { live: "https://jans-math-blog.netlify.app" },
+    thumb: thumb("jans_math_blog.png"),
+  },
+  {
     id: "micro-saas-landing-page",
     title: "Micro SaaS Firm Landing Page",
     tags: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],

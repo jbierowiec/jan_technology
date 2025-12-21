@@ -19,7 +19,7 @@ const PROJECTS = [
     id: "sudoku-game",
     title: "Sudoku Game",
     tags: ["HTML5", "CSS3", "JavaScript", "SQL"],
-    category: ["Web Development", "Game Development"], 
+    category: ["Web Development", "Game Development"],
     links: { live: "https://sudokubros.up.railway.app" },
     thumb: thumb("SudokuGame.png"),
   },
@@ -31,6 +31,8 @@ const PROJECTS = [
     links: { live: "https://www.pocketbookapps.com" },
     thumb: thumb("PocketBookApps.png"),
   },
+  // NEEDS WORK
+  /*
   {
     id: "mycyberlab",
     title: "MyCyberLab",
@@ -39,6 +41,7 @@ const PROJECTS = [
     links: { live: "https://mycyberlab.up.railway.app" },
     thumb: thumb("MyCyberLab.png"),
   },
+  */
   {
     id: "evryquiktool",
     title: "evryquiktool",
@@ -46,14 +49,6 @@ const PROJECTS = [
     category: ["Web Development"],
     links: { live: "https://evryquiktool.up.railway.app" },
     thumb: thumb("evryquiktool.png"),
-  },
-  {
-    id: "thepdfwebsite",
-    title: "ThePDFWebsite",
-    tags: ["HTML5", "CSS3"],
-    category: ["Web Development"],
-    links: { live: "https://thepdfwebsite.com" },
-    thumb: thumb("ThePDFWebsite.png"),
   },
   {
     id: "mathematical-notation-app",
@@ -72,29 +67,34 @@ const PROJECTS = [
     thumb: thumb("jans_math_blog.png"),
   },
   {
-    id: "micro-saas-landing-page",
-    title: "Micro SaaS Firm Landing Page",
-    tags: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
-    category: ["Web Design"],
-    links: { live: "https://jbierowiec.github.io/micro_saas_landing_page/" },
-    thumb: thumb("micro_saas_landing_page.png"),
+    id: "probonopolonia",
+    title: "Pro Bono Polonia",
+    tags: ["React", "CSS3"],
+    category: ["Web Development"],
+    links: { live: "https://probonopolonia.com" },
+    thumb: thumb("probonopolonia.png"),
   },
   {
-    id: "technology-landing-page",
-    title: "Technology Firm Landing Page",
-    tags: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
-    category: ["Web Design"],
-    links: { live: "https://jbierowiec.github.io/technology_landing_page/" },
-    thumb: thumb("technology_landing_page.png"),
+    id: "polonia-cycling-club",
+    title: "Polonia Cycling Club",
+    tags: ["Typescript", "React", "CSS3", "SQLite"],
+    category: ["Web Development"],
+    links: { live: "https://poloniacyclingclub.up.railway.app" },
+    thumb: thumb("polonia_cycling_club.png"),
   },
+  // NEEDS WORK
+  /*
   {
-    id: "construction-landing-page",
-    title: "Construction Firm Landing Page",
-    tags: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
-    category: ["Web Design"],
-    links: { live: "https://jbierowiec.github.io/construction_landing_page/" },
-    thumb: thumb("construction_landing_page.png"),
+    id: "jz-tech",
+    title: "JZ Tech",
+    tags: ["React", "CSS3", "PsotgresQL"],
+    category: ["Web Development"],
+    links: { live: "https://www.jztech.biz" },
+    thumb: thumb("jz-tech.png"),
   },
+  */
+  // NEEDS WORK
+  /*
   {
     id: "mathematical-proofs",
     title: "Mathematical Proofs",
@@ -115,8 +115,21 @@ const PROJECTS = [
     },
     thumb: thumb("biology_definitions.png"),
   },
+    {
+    id: "physics-concepts",
+    title: "Physics Concepts",
+    tags: ["Swift", "XCode"],
+    category: ["App Development"],
+    links: {
+      live: "https://apps.apple.com/us/app/biology-definitions/id6740299638",
+    },
+    thumb: thumb("physics_concepts.png"),
+  },
+  */
+  // NEEDS WORK
+  /*
   {
-    id: "polonia-internationalis",
+    id: "interpolonia",
     title: "Polonia Internationalis",
     tags: ["Swift", "Xcode"],
     category: ["App Development"],
@@ -125,6 +138,7 @@ const PROJECTS = [
     },
     thumb: thumb("polonia_internationalis.png"),
   },
+  */
   {
     id: "e&m-simulation",
     title: "E&M Field Visualizer",
@@ -150,7 +164,7 @@ export default function Projects() {
   const [filter, setFilter] = useState("All");
   const [query, setQuery] = useState("");
 
-  // ✅ MULTI-CATEGORY FILTER
+  // MULTI-CATEGORY FILTER
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return PROJECTS.filter((p) =>
@@ -168,13 +182,12 @@ export default function Projects() {
       <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8">
         {/* Header + Filters */}
         <div className="flex flex-col items-center text-center space-y-6 mb-10">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Projects
-          </h2>
-          <p className="max-w-2xl text-slate-700 dark:text-white/70 text-sm sm:text-base">
-            Filter by domain and search. Cards include a preview, tags, and
-            links.
-          </p>
+          <div className="text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">Projects</h2>
+            <p className="mt-1 text-[11px] uppercase tracking-[0.22em] text-slate-500 dark:text-white/60">
+              Past & Present
+            </p>
+          </div>
 
           {/* Filters (wrap nicely on mobile) */}
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3">

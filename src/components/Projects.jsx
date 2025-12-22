@@ -68,12 +68,12 @@ const PROJECTS = [
   },
   */
   {
-    id: "capstone-project",
-    title: "Capstone Project - Worksheet AI",
+    id: "worksheet-ai",
+    title: "Worksheet AI",
     tags: ["React", "CSS3", "Flask"],
     category: ["Web Development"],
     links: { live: "https://worksheet-ai.up.railway.app" },
-    thumb: thumb("capstone_project.png"),
+    thumb: thumb("worksheet_ai.png"),
   },
   {
     id: "pocketbookapps",

@@ -8,30 +8,55 @@ const thumb = (name) => `${import.meta.env.BASE_URL}thumbs/${name}`;
 
 const PROJECTS = [
   {
-    id: "physim",
-    title: "Physim",
-    tags: ["HTML5", "CSS3", "p5.js", "pyscript"],
+    id: "polonia-cycling-club",
+    title: "Polonia Cycling Club",
+    tags: ["Typescript", "React", "CSS3", "SQLite"],
     category: ["Web Development"],
-    links: { live: "https://www.physim.org" },
-    thumb: thumb("Physim.png"),
+    links: { live: "https://poloniacyclingclub.up.railway.app" },
+    thumb: thumb("polonia_cycling_club.png"),
   },
   {
-    id: "sudoku-game",
-    title: "Sudoku Game",
-    tags: ["HTML5", "CSS3", "JavaScript", "SQL"],
-    category: ["Web Development", "Game Development"],
-    links: { live: "https://sudokubros.up.railway.app" },
-    thumb: thumb("SudokuGame.png"),
+    id: "probonopolonia",
+    title: "Pro Bono Polonia",
+    tags: ["React", "CSS3"],
+    category: ["Web Development"],
+    links: { live: "https://probonopolonia.com" },
+    thumb: thumb("pro_bono_polonia.png"),
   },
   {
-    id: "pocketbookapps",
-    title: "PocketBookApps",
-    tags: ["React", "Bootstrap"],
+    id: "jans-math-blog",
+    title: "Jan's Math Blog",
+    tags: ["HTML", "CSS3", "Nunjucks"],
     category: ["Web Development"],
-    links: { live: "https://www.pocketbookapps.com" },
-    thumb: thumb("PocketBookApps.png"),
+    links: { live: "https://jans-math-blog.netlify.app" },
+    thumb: thumb("jans_math_blog.png"),
   },
-  // NEEDS WORK
+  {
+    id: "mathematical-notation-app",
+    title: "Mathematical Notation App",
+    tags: ["React", "CSS3"],
+    category: ["Web Development"],
+    links: { live: "https://mathematical-notation.netlify.app" },
+    thumb: thumb("mathematical_notation_app.png"),
+  },
+  {
+    id: "evryquiktool",
+    title: "evryquiktool",
+    tags: ["HTML5", "Flask", "Bootstrap"],
+    category: ["Web Development"],
+    links: { live: "https://evryquiktool.up.railway.app" },
+    thumb: thumb("evryquiktool.png"),
+  },
+  {
+    id: "e&m-simulation",
+    title: "E&M Field Visualizer",
+    tags: ["C++", "WASM", "HTML"],
+    category: ["Simulations"],
+    links: {
+      live: "https://jbierowiec.github.io/assets/html/EMFieldVisualizer.html",
+    },
+    thumb: thumb("e&m_simulation.png"),
+  },
   /*
   {
     id: "mycyberlab",
@@ -43,57 +68,53 @@ const PROJECTS = [
   },
   */
   {
-    id: "evryquiktool",
-    title: "evryquiktool",
-    tags: ["HTML5", "Flask", "Bootstrap"],
+    id: "capstone-project",
+    title: "Capstone Project - Worksheet AI",
+    tags: ["React", "CSS3", "Flask"],
     category: ["Web Development"],
-    links: { live: "https://evryquiktool.up.railway.app" },
-    thumb: thumb("evryquiktool.png"),
+    links: { live: "https://worksheet-ai.up.railway.app" },
+    thumb: thumb("capstone_project.png"),
   },
   {
-    id: "mathematical-notation-app",
-    title: "Mathematical Notation App",
-    tags: ["React", "CSS3"],
+    id: "pocketbookapps",
+    title: "PocketBookApps",
+    tags: ["React", "Bootstrap"],
     category: ["Web Development"],
-    links: { live: "https://mathematical-notation.netlify.app" },
-    thumb: thumb("mathematical_notation_app.png"),
+    links: { live: "https://www.pocketbookapps.com" },
+    thumb: thumb("pocket_book_apps.png"),
   },
-  {
-    id: "jans-math-blog",
-    title: "Jan's Math Blog",
-    tags: ["HTML", "CSS3", "Nunjucks"],
-    category: ["Web Development"],
-    links: { live: "https://jans-math-blog.netlify.app" },
-    thumb: thumb("jans_math_blog.png"),
-  },
-  {
-    id: "probonopolonia",
-    title: "Pro Bono Polonia",
-    tags: ["React", "CSS3"],
-    category: ["Web Development"],
-    links: { live: "https://probonopolonia.com" },
-    thumb: thumb("probonopolonia.png"),
-  },
-  {
-    id: "polonia-cycling-club",
-    title: "Polonia Cycling Club",
-    tags: ["Typescript", "React", "CSS3", "SQLite"],
-    category: ["Web Development"],
-    links: { live: "https://poloniacyclingclub.up.railway.app" },
-    thumb: thumb("polonia_cycling_club.png"),
-  },
-  // NEEDS WORK
   /*
   {
-    id: "jz-tech",
-    title: "JZ Tech",
-    tags: ["React", "CSS3", "PsotgresQL"],
-    category: ["Web Development"],
-    links: { live: "https://www.jztech.biz" },
-    thumb: thumb("jz-tech.png"),
+    id: "biology-definitions",
+    title: "Biology Definitions",
+    tags: ["Swift", "XCode"],
+    category: ["App Development"],
+    links: {
+      live: "https://apps.apple.com/us/app/biology-definitions/id6740299638",
+    },
+    thumb: thumb("biology_definitions.png"),
   },
   */
-  // NEEDS WORK
+  {
+    id: "sudoku-game",
+    title: "Sudoku Game",
+    tags: ["HTML5", "CSS3", "JavaScript", "SQL"],
+    category: ["Web Development", "Game Development"],
+    links: { live: "https://sudokubros.up.railway.app" },
+    thumb: thumb("sudoku_game.png"),
+  },
+  /*
+  {
+    id: "interpolonia",
+    title: "Polonia Internationalis",
+    tags: ["Swift", "Xcode"],
+    category: ["App Development"],
+    links: {
+      live: "https://apps.apple.com/us/app/polonia-internationalis/id6478061951",
+    },
+    thumb: thumb("inter_polonia.png"),
+  },
+  */
   /*
   {
     id: "mathematical-proofs",
@@ -105,16 +126,28 @@ const PROJECTS = [
     },
     thumb: thumb("math_proofs.png"),
   },
+  */
   {
-    id: "biology-definitions",
-    title: "Biology Definitions",
-    tags: ["Swift", "XCode"],
-    category: ["App Development"],
-    links: {
-      live: "https://apps.apple.com/us/app/biology-definitions/id6740299638",
-    },
-    thumb: thumb("biology_definitions.png"),
+    id: "physim",
+    title: "Physim",
+    tags: ["HTML5", "CSS3", "p5.js", "pyscript"],
+    category: ["Web Development"],
+    links: { live: "https://www.physim.org" },
+    thumb: thumb("physim.png"),
   },
+
+  // Future projects to add
+  /*
+  {
+    id: "jz-tech",
+    title: "JZ Tech",
+    tags: ["React", "CSS3", "PsotgresQL"],
+    category: ["Web Development"],
+    links: { live: "https://www.jztech.biz" },
+    thumb: thumb("jz_tech.png"),
+  },
+  */
+  /*
     {
     id: "physics-concepts",
     title: "Physics Concepts",
@@ -126,29 +159,6 @@ const PROJECTS = [
     thumb: thumb("physics_concepts.png"),
   },
   */
-  // NEEDS WORK
-  /*
-  {
-    id: "interpolonia",
-    title: "Polonia Internationalis",
-    tags: ["Swift", "Xcode"],
-    category: ["App Development"],
-    links: {
-      live: "https://apps.apple.com/us/app/polonia-internationalis/id6478061951",
-    },
-    thumb: thumb("polonia_internationalis.png"),
-  },
-  */
-  {
-    id: "e&m-simulation",
-    title: "E&M Field Visualizer",
-    tags: ["C++", "WASM", "HTML"],
-    category: ["Simulations"],
-    links: {
-      live: "https://jbierowiec.github.io/assets/html/EMFieldVisualizer.html",
-    },
-    thumb: thumb("E&M_Simulation.png"),
-  },
 ];
 
 const CATEGORIES = [

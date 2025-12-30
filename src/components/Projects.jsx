@@ -17,7 +17,7 @@ const PROJECTS = [
   },
   {
     id: "interpolonia",
-    title: "Polonia Cycling Club",
+    title: "InterPolonia",
     tags: ["React", "CSS3", "Python"],
     category: ["Web Development"],
     links: { live: "https://interpolonia.org" },
@@ -59,7 +59,7 @@ const PROJECTS = [
     id: "evryquiktool",
     title: "evryquiktool",
     tags: ["HTML5", "Flask", "Bootstrap"],
-    category: ["Web Development"],
+    category: ["Web Development", "Automation"],
     links: { live: "https://evryquiktool.up.railway.app" },
     thumb: thumb("evryquiktool.png"),
   },

@@ -8,6 +8,22 @@ const thumb = (name) => `${import.meta.env.BASE_URL}thumbs/${name}`;
 
 const PROJECTS = [
   {
+    id: "general-web-scraper",
+    title: "General Web Scraper",
+    tags: ["React", "CSS3", "Flask", "SQLite"],
+    category: ["Web Development", "Automation"],
+    links: { live: "https://general-web-scraper.up.railway.app" },
+    thumb: thumb("general_web_scraper.png"),
+  },
+  {
+    id: "interpolonia",
+    title: "Polonia Cycling Club",
+    tags: ["React", "CSS3", "Python"],
+    category: ["Web Development"],
+    links: { live: "https://interpolonia.org" },
+    thumb: thumb("inter_polonia.png"),
+  },
+  {
     id: "polonia-cycling-club",
     title: "Polonia Cycling Club",
     tags: ["Typescript", "React", "CSS3", "SQLite"],
@@ -26,7 +42,7 @@ const PROJECTS = [
   {
     id: "jans-math-blog",
     title: "Jan's Math Blog",
-    tags: ["HTML", "CSS3", "Nunjucks"],
+    tags: ["HTML5", "CSS3", "Nunjucks"],
     category: ["Web Development"],
     links: { live: "https://jans-math-blog.netlify.app" },
     thumb: thumb("jans_math_blog.png"),
@@ -50,8 +66,8 @@ const PROJECTS = [
   {
     id: "e&m-simulation",
     title: "E&M Field Visualizer",
-    tags: ["C++", "WASM", "HTML"],
-    category: ["Simulations"],
+    tags: ["C++", "WASM", "HTML5"],
+    category: ["Simulation"],
     links: {
       live: "https://jbierowiec.github.io/assets/html/EMFieldVisualizer.html",
     },
@@ -164,10 +180,10 @@ const PROJECTS = [
 const CATEGORIES = [
   "All",
   "Web Development",
-  "Web Design",
   "App Development",
   "Game Development",
-  "Simulations",
+  "Automation",
+  "Simulation",
 ];
 
 export default function Projects() {

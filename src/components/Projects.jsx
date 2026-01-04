@@ -8,6 +8,14 @@ const thumb = (name) => `${import.meta.env.BASE_URL}thumbs/${name}`;
 
 const PROJECTS = [
   {
+    id: "visual-robotics-lab",
+    title: "Visual Robotics Lab",
+    tags: ["TypeScript", "CSS3"],
+    category: ["Web Development", "Robotics"],
+    links: { live: "https://visual-robotics-lab.up.railway.app" },
+    thumb: thumb("visual_robotics_lab.png"),
+  },
+  {
     id: "general-web-scraper",
     title: "General Web Scraper",
     tags: ["React", "CSS3", "Flask", "SQLite"],
@@ -87,10 +95,11 @@ const PROJECTS = [
     id: "worksheet-ai",
     title: "Worksheet AI",
     tags: ["React", "CSS3", "Flask"],
-    category: ["Web Development"],
+    category: ["Web Development", "Automation"],
     links: { live: "https://worksheet-ai.up.railway.app" },
     thumb: thumb("worksheet_ai.png"),
   },
+  /*
   {
     id: "pocketbookapps",
     title: "PocketBookApps",
@@ -99,6 +108,7 @@ const PROJECTS = [
     links: { live: "https://www.pocketbookapps.com" },
     thumb: thumb("pocket_book_apps.png"),
   },
+  */
   /*
   {
     id: "biology-definitions",
@@ -180,10 +190,11 @@ const PROJECTS = [
 const CATEGORIES = [
   "All",
   "Web Development",
-  "App Development",
+  //"App Development",
   "Game Development",
   "Automation",
   "Simulation",
+  "Robotics",
 ];
 
 export default function Projects() {

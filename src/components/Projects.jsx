@@ -92,12 +92,12 @@ const PROJECTS = [
   },
   */
   {
-    id: "worksheet-ai",
-    title: "Worksheet AI",
+    id: "stemsheetsai",
+    title: "STEMSheets AI",
     tags: ["React", "CSS3", "Flask"],
     category: ["Web Development", "Automation"],
-    links: { live: "https://worksheet-ai.up.railway.app" },
-    thumb: thumb("worksheet_ai.png"),
+    links: { live: "https://stemsheetsai.up.railway.app" },
+    thumb: thumb("stemsheetsai.png"),
   },
   /*
   {
@@ -205,7 +205,7 @@ export default function Projects() {
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return PROJECTS.filter((p) =>
-      filter === "All" ? true : (p.category || []).includes(filter)
+      filter === "All" ? true : (p.category || []).includes(filter),
     ).filter((p) => {
       const haystack = [p.title, p.blurb || "", (p.tags || []).join(" ")]
         .join(" ")

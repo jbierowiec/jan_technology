@@ -91,6 +91,7 @@ const PROJECTS = [
     thumb: thumb("MyCyberLab.png"),
   },
   */
+  /*
   {
     id: "stemsheetsai",
     title: "STEMSheets AI",
@@ -99,6 +100,7 @@ const PROJECTS = [
     links: { live: "https://stemsheetsai.up.railway.app" },
     thumb: thumb("stemsheetsai.png"),
   },
+  */
   /*
   {
     id: "pocketbookapps",

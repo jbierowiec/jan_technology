@@ -11,9 +11,11 @@ I design and ship reliable, real-world software across websites, applications, a
 ## Overview
 
 This portfolio unites my multidisciplinary engineering and creative projects in one interactive space.  
+
 It highlights my work across application development, website development, website design, game development, simulation & animation development, and SaaS / micro-SaaS engineering.
 
 Each project emphasizes functionality, polish, and real-world purpose — combining frontend design, backend logic, and scientific or educational insight.  
+
 The portfolio demonstrates not just code execution, but also concept-driven visualization and user experience design.
 
 ---

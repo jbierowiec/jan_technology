@@ -1,6 +1,7 @@
 # Jan Technology 
 
 This repository hosts my personal technology site. The site showcases my work as a **functional engineer and builder**.  
+
 I design and ship reliable, real-world software across **web, app, and cloud systems**, always prioritizing clarity, performance, and creativity.
 
 **Live Site:** [jbierowiec.github.io/jan_technology](https://jbierowiec.github.io/jan_technology)

@@ -1,8 +1,8 @@
 # Jan Technology 
 
-This repository hosts my personal technology site. The site showcases my work as a **functional engineer and builder**.  
+This repository hosts my personal technology site. The site showcases my work as an interdisciplinary engineer — building educational technology, intelligent automation, and human-centered systems.
 
-I design and ship reliable, real-world software across **web, app, and cloud systems**, always prioritizing clarity, performance, and creativity.
+I design and ship reliable, real-world software across websites, applications, and cloud systems, always prioritizing clarity, performance, and creativity.
 
 **Live Site:** [jbierowiec.github.io/jan_technology](https://jbierowiec.github.io/jan_technology)
 
@@ -11,9 +11,9 @@ I design and ship reliable, real-world software across **web, app, and cloud sys
 ## Overview
 
 This portfolio unites my multidisciplinary engineering and creative projects in one interactive space.  
-It highlights my work across **application development**, **website development**, **website design**, **game development**, **simulation & animation development**, and **SaaS / micro-SaaS engineering**.
+It highlights my work across application development, website development, website design, game development, simulation & animation development, and SaaS / micro-SaaS engineering.
 
-Each project emphasizes functionality, polish, and real-world purpose — combining **frontend design**, **backend logic**, and **scientific or educational insight**.  
+Each project emphasizes functionality, polish, and real-world purpose — combining frontend design, backend logic, and scientific or educational insight.  
 The portfolio demonstrates not just code execution, but also concept-driven visualization and user experience design.
 
 ---

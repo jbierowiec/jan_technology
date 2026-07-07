@@ -8,6 +8,14 @@ const thumb = (name) => `${import.meta.env.BASE_URL}thumbs/${name}`;
 
 const PROJECTS = [
   {
+    id: "simple-image-hosting-site",
+    title: "Simple Image Hosting Site",
+    tags: ["React", "CSS3"],
+    category: ["Web Development", "Automation"],
+    links: { live: "https://simple-image-hosting-site.up.railway.app" },
+    thumb: thumb("simple_image_hosting_site.png"),
+  },
+  {
     id: "visual-robotics-lab",
     title: "Visual Robotics Lab",
     tags: ["TypeScript", "CSS3"],
